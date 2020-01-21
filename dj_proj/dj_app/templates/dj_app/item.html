@@ -1,0 +1,10 @@
+<ul>
+{% for item in items %}
+<li>{{item.name}}</li>
+{% endfor %}
+</ul>
+<form method="post">
+{% csrf_token %}
+{{form.as_p}}
+<input type="submit"></input>
+</form>
